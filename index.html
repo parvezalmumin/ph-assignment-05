@@ -1,209 +1,265 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Emergency Service</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-
-  <!-- Navbar Section-->
-  <nav class="navbar">
-    <div class="nav-left">
-      <img src="assets/logo.png" alt="logo" class="logo"> 
-      <span class="site-name">Emergency Service</span>
-    </div>
-    <div class="nav-right">
-      <div class="stat-item">
-        <span id="heart-count">0</span>
-        <img src="assets/heart.png" alt="heart" class="icon-img">
-      </div>
-      <div class="stat-item">
-        <span id="coin-count">100</span>
-        <img src="assets/coin.png" alt="coin" class="icon-img"> <!-- coin icon -->
-      </div>
-      <div class="stat-item copy-box">
-        <span id="copy-count">0</span> Copy
-      </div>
-    </div>
-  </nav>
-<!--Navbar Section Done-->
-
-<!-- Hero Section -->
-    <!-- Header section -->
-    <section>
-      <div class="header">
-        <!-- Replace logo here if needed -->
-        <img class="logo" src="assets/logo-dark.png" alt="Logo">
-        <h1>Emergency Service Directory</h1>
-        <p>Government Emergency Service at Your Fingertips - A Project by Government of the People's Republic of Bangladesh</p>
-      </div>
-    </section>
-  <!--Hero Section Done-->
-
-  <!--Main Section-->
-  <!--Emergency Hotline Section-->
-
-  <section class="cards-container">
-      <div class="grid-container">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Emergency Service</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+      integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <!-- Header starts here -->
+    <header class="">
+      <nav class="">
+        <div class="grid grid-cols-2 border">
+          <div class="flex ml-5 mt-3 mb-3 md:ml-10 md:p-4 md:mt-0">
+            <img class="h-8 mt-1 md:h-14" src="assets/logo.png" alt="" srcset="" />
+            <span class="anton-regular pl-1 text-sm text-green-700 md:text-2xl md:ml-1"
+              >Emergency <br />
+              Service</span
+            >
+          </div>
+          <div class="flex justify-end md:mr-10">
+            <div class="flex pl-5 pr-5 md:p-6 md:mr-4 bg-cyan-50 rounded-4xl">
+              <button id="heart-count" class="pr-1 md:pr-1.5 md:pt-1.5 md:text-2xl">0</button>
+              <img class="h-4 mt-6 md:h-8 md:mt-4.5" src="assets/heart.png" alt="" srcset="" />
+            </div>
+            <div class="flex pl-5 pr-5 md:p-6 md:mr-4 bg-cyan-50 rounded-4xl">
+              <button id="token" class="pr-1 md:pr-1.5 md:pt-1.5 md:text-2xl">100</button>
+              <img class="h-4 mt-6 md:h-8 md:mt-4" src="assets/coin.png" alt="" srcset="" />
+            </div>
+            <div class=" mr-4 mt-3 md:p-6 md:mt-1 ">
+              <button id="copy-count"
+                class="bg-green-500 rounded-2xl pl-2 pr-2 pb-1  mt-2 md:rounded-3xl md:pl-4 md:pr-4 md:pt-2 md:pb-2 text-white">
+                0 Copy
+              </button>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- Header ends here -->
+    <!-- Main starts here -->
+    <main class="bg-blue-50">
+        <!-- Main description and bio -->
+      <section>
+        <div class="bg-color grid place-items-center p-4 ">
+          <img class="h-18" src="assets/logo-dark.png" alt="" srcset="" />
+          <span class="text-white text-2xl font-bold mt-2 mb-2"
+            >জরুরী সেবা ডিরেক্টরি</span
+          >
+          <span class="text-white text-center"
+            >Goverment Emergency Service at Your Fingertip - A Project by
+            Goverment of the People's Republic of Bangladesh</span
+          >
+        </div>
+      </section>
+      <!-- All cards are created here -->
+      <section class="w-11/12 m-auto justify-center">
+        <div
+          class="container mt-5 mb-5 gap-4 place-items-center grid grid-cols-1 md:grid-cols-4"
+        >
         
-        <!-- Card 1 -->
-        <div class="card">
-          <div class="card-header">
-            <img src="assets/emergency.png" class="icon" alt="Emergency Icon">
+          <!-- card one -->
+          <div class="card newCard w-full bg-white p-7 rounded-2xl shadow-md">
+            <div class="flex justify-between">
+              <img class="h-6" src="assets/emergency.png" alt="" srcset="" />
+              <button class="heart-btn-id"><i class="fa-regular fa-heart text-2xl hover:cursor-pointer transition-transform duration-300 hover:scale-120"></i></button>
+            </div>
+            <div class="grid">
+              <span class="call-history mt-3 font-bold">জাতীয় জরুরী সেবা </span>
+              <span class="call-allert">National Emergency Service</span>
+              <span class="contact hotline font-bold text-xl mt-2">999</span>
+            </div>
+            <button class="new-color p-2 mt-2 rounded-2xl text-sm">সার্বজনীন</button>
+            <div class="flex justify-center mt-4">
+              <button class="copy-btn mr-14 pl-5 pr-5 p-1 border rounded-md hover:cursor-pointer hover:bg-gray-100 active:bg-gray-300"><i class=" fa-solid fa-copy mr-2"></i>Copy</button>
+              <button  class="call-btn pl-5 pr-6 p-1 border rounded-md hover:cursor-pointer bg-green-600 text-white  hover:bg-green-700 active:bg-green-800"><i class="fa-solid fa-phone-volume mr-2"></i>Call</button>
+            </div>
           </div>
-          <div class="card-body">
-            <h3>National Emergency Service</h3>
-            <p class="number">999</p>
-            <span class="tag">Public</span>
+          <!-- card Two -->
+          <div class="card newCard w-full bg-white p-7 rounded-2xl shadow-md">
+            <div class="flex justify-between">
+              <img class="h-6" src="assets/police.png" alt="" srcset="" />
+              <button class="heart-btn-id"><i class="fa-regular fa-heart text-2xl hover:cursor-pointer transition-transform duration-300 hover:scale-120"></i></button>
+              
+            </div>
+            <div class="grid">
+              <span class="call-history mt-3 font-bold">পুলিশ</span>
+              <span class="call-allert">Police</span>
+              <span class="contact hotline font-bold text-xl mt-2">999</span> 
+            </div>
+            <button class="new-color p-2 mt-2 rounded-2xl text-sm">পুলিশ</button>
+            <div class="flex justify-center mt-4">
+              <button class="copy-btn mr-14 pl-5 pr-5 p-1 border rounded-md hover:cursor-pointer hover:bg-gray-100 active:bg-gray-300"><i class=" fa-solid fa-copy mr-2"></i>Copy</button>
+              <button  class="call-btn pl-5 pr-6 p-1 border rounded-md hover:cursor-pointer bg-green-600 text-white  hover:bg-green-700 active:bg-green-800"><i class="fa-solid fa-phone-volume mr-2"></i>Call</button>
+            </div>
           </div>
-          <div class="card-footer">
-            <button class="copy-btn">Copy</button>
-            <button class="call-btn">Call</button>
+          <!-- card three -->
+          <div class="card newCard w-full bg-white p-7 rounded-2xl shadow-md">
+            <div class="flex justify-between">
+              <img class="h-6" src="assets/fire-service.png" alt="" srcset="" />
+              <button class="heart-btn-id"><i class="fa-regular fa-heart text-2xl hover:cursor-pointer transition-transform duration-300 hover:scale-120"></i></button>
+              
+            </div>
+            <div class="grid">
+              <span class="call-history mt-3 font-bold">ফায়ার সার্ভিস </span>
+              <span class="call-allert">Fire Service</span>
+              <span class="contact hotline font-bold text-xl mt-2">999</span> 
+            </div>
+            <button class="new-color p-2 mt-2 rounded-2xl text-sm">ফায়ার</button>
+            <div class="flex justify-center mt-4">
+              <button class="copy-btn mr-14 pl-5 pr-5 p-1 border rounded-md hover:cursor-pointer hover:bg-gray-100 active:bg-gray-300"><i class=" fa-solid fa-copy mr-2"></i>Copy</button>
+              <button  class="call-btn pl-5 pr-6 p-1 border rounded-md hover:cursor-pointer bg-green-600 text-white  hover:bg-green-700 active:bg-green-800"><i class="fa-solid fa-phone-volume mr-2"></i>Call</button>
+            </div>
           </div>
+          <!-- card four -->
+          <div class="card h-full w-full bg-white row-span-3 rounded-2xl shadow-md">
+            <div class="flex justify-between">
+                <div class="m-3">
+            <i class="fa-solid fa-clock"></i>
+            <span>Call History</span>
+            </div>
+            <div class="m-2">
+                <button id="clear-btn"
+                class=" rounded-3xl pl-4 pr-4 pt-2 pb-2 text-sm hover:cursor-pointer bg-green-600 text-white  hover:bg-green-700 active:bg-green-800""
+              >
+                Clear
+              </button>
+            </div>
+            </div>
+            <!-- History will be added dynamically here -->
+            <div id="call-history-container" class=" p-3"> 
+                         
+            </div>
+            <!-- History will be added dynamically above -->
+          </div>
+          <!-- card five  -->
+          <div class="card newCard w-full bg-white p-7 rounded-2xl shadow-md">
+            <div class="flex justify-between">
+              <img class="h-6" src="assets/ambulance.png" alt="" srcset="" />
+              <button class="heart-btn-id"><i class="fa-regular fa-heart text-2xl hover:cursor-pointer transition-transform duration-300 hover:scale-120"></i></button>
+            </div>
+            <div class="grid">
+              <span class="call-history mt-3 font-bold">এ্যাম্বুলেন্স </span>
+              <span class="call-allert">Ambulance</span>
+              <span class="contact hotline font-bold text-xl mt-2">1943-999999</span> 
+            </div>
+            <button class="new-color p-2 mt-2 rounded-2xl text-sm">স্বাস্থ্য</button>
+            <div class="flex justify-center mt-4">
+              <button class="copy-btn mr-14 pl-5 pr-5 p-1 border rounded-md hover:cursor-pointer hover:bg-gray-100 active:bg-gray-300"><i class=" fa-solid fa-copy mr-2"></i>Copy</button>
+              <button  class="call-btn pl-5 pr-6 p-1 border rounded-md hover:cursor-pointer bg-green-600 text-white  hover:bg-green-700 active:bg-green-800"><i class="fa-solid fa-phone-volume mr-2"></i>Call</button>
+            </div>
+          </div>
+          <!-- card six  -->
+         <div class="card newCard w-full bg-white p-7 rounded-2xl shadow-md">
+            <div class="flex justify-between">
+              <img class="h-6" src="assets/emergency.png" alt="" srcset="" />
+              <button class="heart-btn-id"><i class="fa-regular fa-heart text-2xl hover:cursor-pointer transition-transform duration-300 hover:scale-120"></i></button>
+            </div>
+            <div class="grid">
+              <span class="call-history mt-3 font-bold">নারী ও শিশু সহায়তা </span>
+              <span class="call-allert">Women and Child Support</span>
+              <span class="contact hotline font-bold text-xl mt-2">109</span> 
+            </div>
+            <button class="new-color p-2 mt-2 rounded-2xl text-sm">সহায়তা</button>
+            <div class="flex justify-center mt-4">
+              <button class="copy-btn mr-14 pl-5 pr-5 p-1 border rounded-md hover:cursor-pointer hover:bg-gray-100 active:bg-gray-300"><i class=" fa-solid fa-copy mr-2"></i>Copy</button>
+              <button  class="call-btn pl-5 pr-6 p-1 border rounded-md hover:cursor-pointer bg-green-600 text-white  hover:bg-green-700 active:bg-green-800"><i class="fa-solid fa-phone-volume mr-2"></i>Call</button>
+            </div>
+          </div>
+          <!-- card seven  -->
+          <div class="card newCard w-full bg-white p-7 rounded-2xl shadow-md">
+            <div class="flex justify-between">
+              <img class="h-6" src="assets/emergency.png" alt="" srcset="" />
+              <button class="heart-btn-id"><i class="fa-regular fa-heart text-2xl hover:cursor-pointer transition-transform duration-300 hover:scale-120"></i></button>
+              
+            </div>
+            <div class="grid">
+              <span class="call-history mt-3 font-bold">দুদক </span>
+              <span class="call-allert">Anti-corruption</span>
+              <span class="contact hotline font-bold text-xl mt-2">106</span> 
+            </div>
+            <button class="new-color p-2 mt-2 rounded-2xl text-sm">সরকারী</button>
+            <div class="flex justify-center mt-4">
+              <button class="copy-btn mr-14 pl-5 pr-5 p-1 border rounded-md hover:cursor-pointer hover:bg-gray-100 active:bg-gray-300"><i class=" fa-solid fa-copy mr-2"></i>Copy</button>
+              <button  class="call-btn pl-5 pr-6 p-1 border rounded-md hover:cursor-pointer bg-green-600 text-white  hover:bg-green-700 active:bg-green-800"><i class="fa-solid fa-phone-volume mr-2"></i>Call</button>
+            </div>
+          </div>
+          
+          <!-- card eight  -->
+          <div class="card newCard w-full bg-white p-7 rounded-2xl shadow-md">
+            <div class="flex justify-between">
+              <img class="h-6" src="assets/emergency.png" alt="" srcset="" />
+              <button class="heart-btn-id"><i class="fa-regular fa-heart text-2xl hover:cursor-pointer transition-transform duration-300 hover:scale-120"></i></button>
+            </div>
+            <div class="grid">
+              <span class="call-history mt-3 font-bold">বিদ্যুৎ বিভ্রাট </span>
+              <span class="call-allert">Electricity Outage</span>
+              <span class="contact hotline font-bold text-xl mt-2">16216</span> 
+            </div>
+            <button class="new-color p-2 mt-2 rounded-2xl text-sm">বিদ্যুৎ</button>
+            <div class="flex justify-center mt-4">
+              <button class="copy-btn mr-14 pl-5 pr-5 p-1 border rounded-md hover:cursor-pointer hover:bg-gray-100 active:bg-gray-300"><i class=" fa-solid fa-copy mr-2"></i>Copy</button>
+              <button  class="call-btn pl-5 pr-6 p-1 border rounded-md hover:cursor-pointer bg-green-600 text-white  hover:bg-green-700 active:bg-green-800"><i class="fa-solid fa-phone-volume mr-2"></i>Call</button>
+            </div>
+          </div>
+          
+          <!-- card nine  -->
+          <div class="card newCard w-full bg-white p-7 rounded-2xl shadow-md">
+            <div class="flex justify-between">
+              <img class="h-6" src="assets/brac.png" alt="" srcset="" />
+              <button class="heart-btn-id"><i class="fa-regular fa-heart text-2xl hover:cursor-pointer transition-transform duration-300 hover:scale-120"></i></button>
+              
+            </div>
+            <div class="grid">
+              <span class="call-history mt-3 font-bold"> ব্র্যাক</span>
+              <span class="call-allert">Brac</span>
+              <span class="contact hotline font-bold text-xl mt-2">16445</span> 
+            </div>
+            <button class="new-color p-2 mt-2 rounded-2xl text-sm">এনজিও</button>
+            <div class="flex justify-center mt-4">
+              <button class="copy-btn mr-14 pl-5 pr-5 p-1 border rounded-md hover:cursor-pointer hover:bg-gray-100 active:bg-gray-300"><i class=" fa-solid fa-copy mr-2"></i>Copy</button>
+              <button  class="call-btn pl-5 pr-6 p-1 border rounded-md hover:cursor-pointer bg-green-600 text-white  hover:bg-green-700 active:bg-green-800"><i class="fa-solid fa-phone-volume mr-2"></i>Call</button>
+            </div>
+          </div>
+          <!-- card ten  -->
+          <div class="card newCard w-full bg-white p-7 rounded-2xl shadow-md">
+            <div class="flex justify-between">
+              <img class="h-6" src="assets/Bangladesh-Railway.png" alt="" srcset="" />
+              <button class="heart-btn-id"><i class="fa-regular fa-heart text-2xl hover:cursor-pointer transition-transform duration-300 hover:scale-120"></i></button>
+              
+            </div>
+            <div class="grid">
+              <span class="call-history mt-3 font-bold">বাংলাদেশ রেলওয়ে </span>
+              <span class="call-allert">Bangladesh Railway</span>
+              <span class="contact hotline font-bold text-xl mt-2">163</span> 
+            </div>
+            <button class="new-color p-2 mt-2 rounded-2xl text-sm">পরিবহন</button>
+            <div class="flex justify-center mt-4">
+              <button class="copy-btn mr-14 pl-5 pr-5 p-1 border rounded-md hover:cursor-pointer hover:bg-gray-100 active:bg-gray-300"><i class=" fa-solid fa-copy mr-2"></i>Copy</button>
+              <button  class="call-btn pl-5 pr-6 p-1 border rounded-md hover:cursor-pointer bg-green-600 text-white  hover:bg-green-700 active:bg-green-800"><i class="fa-solid fa-phone-volume mr-2"></i>Call</button>
+            </div>
+          </div>
+          
+          
+          
         </div>
-
-        <!-- Card 2 -->
-        <div class="card">
-          <div class="card-header">
-            <img src="assets/police.png" class="icon" alt="Police Icon">
-          </div>
-          <div class="card-body">
-            <h3>Police</h3>
-            <p class="number">999</p>
-            <span class="tag">Police</span>
-          </div>
-          <div class="card-footer">
-            <button class="copy-btn">Copy</button>
-            <button class="call-btn">Call</button>
-          </div>
-        </div>
-
-        <!-- Card 3 -->
-        <div class="card">
-          <div class="card-header">
-            <img src="assets/fire-service.png" class="icon" alt="Fire Icon">
-          </div>
-          <div class="card-body">
-            <h3>Fire Service</h3>
-            <p class="number">999</p>
-            <span class="tag">Fire</span>
-          </div>
-          <div class="card-footer">
-            <button class="copy-btn">Copy</button>
-            <button class="call-btn">Call</button>
-          </div>
-        </div>
-
-        <!-- Card 4 -->
-        <div class="card">
-          <div class="card-header">
-            <img src="assets/ambulance.png" class="icon" alt="Ambulance Icon">
-          </div>
-          <div class="card-body">
-            <h3>Ambulance</h3>
-            <p class="number">1943-999999</p>
-            <span class="tag">Health</span>
-          </div>
-          <div class="card-footer">
-            <button class="copy-btn">Copy</button>
-            <button class="call-btn">Call</button>
-          </div>
-        </div>
-
-        <!-- Card 5 -->
-        <div class="card">
-          <div class="card-header">
-            <img src="assets/emergency.png" class="icon" alt="Women Icon">
-          </div>
-          <div class="card-body">
-            <h3>Women & Child Support</h3>
-            <p class="number">109</p>
-            <span class="tag">Support</span>
-          </div>
-          <div class="card-footer">
-            <button class="copy-btn">Copy</button>
-            <button class="call-btn">Call</button>
-          </div>
-        </div>
-
-        <!-- Card 6 -->
-        <div class="card">
-          <div class="card-header">
-            <img src="assets/emergency.png" class="icon" alt="Anti-Corruption Icon">
-          </div>
-          <div class="card-body">
-            <h3>Anti-Corruption</h3>
-            <p class="number">106</p>
-            <span class="tag">Government</span>
-          </div>
-          <div class="card-footer">
-            <button class="copy-btn">Copy</button>
-            <button class="call-btn">Call</button>
-          </div>
-        </div>
-
-        <!-- Card 7 -->
-        <div class="card">
-          <div class="card-header">
-            <img src="assets/emergency.png" class="icon" alt="Electricity Icon">
-          </div>
-          <div class="card-body">
-            <h3>Electricity Outage</h3>
-            <p class="number">16216</p>
-            <span class="tag">Electricity</span>
-          </div>
-          <div class="card-footer">
-            <button class="copy-btn">Copy</button>
-            <button class="call-btn">Call</button>
-          </div>
-        </div>
-
-        <!-- Card 8 -->
-        <div class="card">
-          <div class="card-header">
-            <img src="assets/brac.png" class="icon" alt="BRAC Icon">
-          </div>
-          <div class="card-body">
-            <h3>BRAC</h3>
-            <p class="number">16445</p>
-            <span class="tag">NGO</span>
-          </div>
-          <div class="card-footer">
-            <button class="copy-btn">Copy</button>
-            <button class="call-btn">Call</button>
-          </div>
-        </div>
-
-        <!-- Card 9 -->
-        <div class="card">
-          <div class="card-header">
-            <img src="assets/Bangladesh-Railway.png" class="icon" alt="Railway Icon">
-          </div>
-          <div class="card-body">
-            <h3>Bangladesh Railway</h3>
-            <p class="number">163</p>
-            <span class="tag">Transport</span>
-          </div>
-          <div class="card-footer">
-            <button class="copy-btn">Copy</button>
-            <button class="call-btn">Call</button>
-          </div>
-        </div>
-
-            <!-- Right side (history) -->
-    <div class="history-card">
-      <div class="history-header">
-        <h3>Call History</h3>
-        <button class="clear-btn">Clear</button>
-      </div>
-      <div id="callHistory" class="history-body">
-
-      </div>
-    </section>
-  <!--Emergency Hotline Section Done-->
-
-  <script src="script.js"></script>
-</body>
+      </section>
+     
+    <script src="index.js"></script>
+  </body>
 </html>
