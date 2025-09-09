@@ -1,4 +1,5 @@
  Questions :
+ 
 1.What is the difference between getElementById, getElementsByClassName, and querySelector / querySelectorAll?
 
 2.How do you create and insert a new element into the DOM?
